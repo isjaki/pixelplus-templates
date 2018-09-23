@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+.html {
+    position: relative; /* прижимаем footer к нижней части окна браузера */
+    min-height: 100%;
+}
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    height: 100%;
+}
+
+.layout-positioner {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-block {
+    background-color: #777777;
+    margin-bottom: 10px;
+}
+
+.block-1 {
+    width: 120px;
+    height: 105px;
+    margin-right: 20px;
+}
+
+.block-2 {
+    width: 280px;
+    height: 105px;
+    margin-right: 20px;
+}
+
+.block-3 {
+    width: 519px;
+    height: 105px;
+    color: #ffffff;
+    text-align: right;
+    padding: 18px 25px;
+}
+
+.content {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.left {
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    height: 100%;
+}
+
+.block-4 {
+    background-color: #777777;
+    color: #ffffff;
+    width: 100%;
+    height: 336px;
+}
+
+.block-7 {
+    width: 100%;
+    height: 130px;
+    background-color: #777777;
+    align-self: flex-end; /* прижимаем блок к нижней части области left */
+}
+
+.center {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: flex-start;
+    width: 780px;
+    margin-left: 180px; /* добавляем внешний отступ влево, равный ширине области left, поскольку ей задано абсолютное позиционирование */
+}
+
+.center-block {
+    background-color: #dbdbdb;
+    margin-left: 20px;
+}
+
+.block-5 {
+    width: 760px;
+    height: 210px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+
+}
+
+.block-6 {
+    width: 136px;
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+
+.bottom {
+    display: flex;
+}
+
+.block-8 {
+    width: 365px;
+    height: 200px;
+}
+
+.block-9 {
+    width: 375px;
+    height: 200px;
+}
+
+.footer {
+    display: flex;
+    position: absolute; /* прижимаем footer к нижней части окна браузера */
+    top: 122%;
+    margin-top: 6px;
+}
+
+.footer-block {
+    background-color: #777777;
+    margin-bottom: 25px;
+}
+
+.block-10, .block-11 {
+    width: 298px;
+    height: 180px;
+}
+
+.block-11 {
+    margin-left: 28px;
+}
+
+.block-12, .block-13 {
+    width: 308px;
+    height: 77px;
+    margin-left: 28px;
+}
